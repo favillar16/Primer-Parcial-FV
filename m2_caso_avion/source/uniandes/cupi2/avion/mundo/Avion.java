@@ -368,7 +368,7 @@ public class Avion
     {	
     	boolean encontrado = false;
     	Silla silla = null;
-    	for (int i = SILLAS_ECONOMICAS; i>SILLAS_EJECUTIVAS && !encontrado; i++) {
+    	for (int i = SILLAS_ECONOMICAS; i>SILLAS_EJECUTIVAS && !encontrado; i--) {
     		silla = sillasEconomicas[i];
     		if (!(silla.sillaAsignada()) && silla.darUbicacion() == ubicacion) {
     			encontrado = true ;
